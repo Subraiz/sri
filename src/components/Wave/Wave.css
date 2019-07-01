@@ -1,0 +1,240 @@
+.wave-container {
+  width: 200vw;
+  height: 50vh;
+  z-index: -2;
+}
+
+.wave-container .wave {
+  z-index: 0;
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  right: 0;
+  height: 440px;
+  background: url("../../assets/images/Wave@440.png");
+  animation: animate 10s linear infinite;
+}
+
+.wave-container .wave:before {
+  content: "";
+  width: 100%;
+  height: 440px;
+  background: url("../../assets/images/Wave@440.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  animation: animate-reverse 10s linear infinite;
+}
+
+.wave-container .wave:after {
+  content: "";
+  width: 100%;
+  height: 440px;
+  background: url("../../assets/images/Wave@440.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  animation-delay: -5%;
+  animation: animate-reverse 20s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 2410px;
+  }
+}
+
+@keyframes animate-reverse {
+  0% {
+    background-position: 2410px;
+  }
+  100% {
+    background-position: 0px;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    margin-bottom: 10px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    right: -100px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+.mission-container {
+  position: absolute;
+  z-index: 2;
+  width: 60vw;
+  padding-left: 5vw;
+  padding-top: 17vh;
+  color: white;
+}
+
+.mission-container p:nth-child(1) {
+  font-weight: bold;
+  color: #109689;
+  font-size: 38px;
+  animation: fade-in 1s linear;
+}
+
+.mission-container p:nth-child(2) {
+  font-weight: lighter;
+  animation: fade-in 2s linear;
+}
+
+.building {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  right: -10vw;
+  width: 50vw;
+  height: 30vh;
+  background-image: url("../../assets/images/Building.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fade-up 0.75s linear;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  color: white;
+  z-index: 2;
+  animation: pulse 1s linear infinite;
+}
+
+@media (max-width: 320px) {
+  .wave-container {
+    height: 72vh;
+  }
+  .wave-container .wave {
+    height: 440px;
+    background: url("../../assets/images/Wave@440.png");
+    opacity: 0.95;
+  }
+
+  .wave-container .wave:before {
+    height: 440px;
+    background: url("../../assets/images/Wave@440.png");
+    opacity: 0.6;
+  }
+
+  .wave-container .wave:after {
+    height: 440px;
+    background: url("../../assets/images/Wave@440.png");
+    opacity: 0.4;
+  }
+  .mission-container p:nth-child(2) {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 715px) {
+  .mission-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 90vw;
+    flex-flow: column;
+  }
+
+  .mission-container p:nth-child(1) {
+    margin-bottom: 0px;
+  }
+  .mission-container p:nth-child(2) {
+    margin: 15px 0 0 0;
+  }
+
+  .building {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 715px) {
+  .mission-container {
+    margin: 0px;
+    padding: 8vh 0 0 5vw;
+  }
+  .building {
+    right: 0;
+    background-image: url("../../assets/images/BuildingiPad.png");
+  }
+}
+
+@media (max-width: 414px) and (min-width: 320px) and (min-height: 668px) {
+  .wave-container {
+    height: 68vh;
+  }
+  .wave-container .wave {
+    height: 540px;
+    background: url("../../assets/images/Wave@540.png");
+    opacity: 0.8;
+  }
+
+  .wave-container .wave:before {
+    height: 540px;
+    background: url("../../assets/images/Wave@540.png");
+    opacity: 0.5;
+  }
+
+  .wave-container .wave:after {
+    height: 540px;
+    background: url("../../assets/images/Wave@540.png");
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 414px) and (min-width: 320px) and (max-height: 667px) {
+  .wave-container .wave {
+    opacity: 0.8;
+  }
+
+  .wave-container .wave:before {
+    opacity: 0.5;
+  }
+
+  .wave-container .wave:after {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 975px) and (min-width: 414px) {
+  .wave-container {
+    height: 62vh;
+  }
+}

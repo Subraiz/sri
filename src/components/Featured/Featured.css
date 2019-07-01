@@ -1,0 +1,41 @@
+.featured-listings-container {
+  width: 96vw;
+  display: flex;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.listing-item {
+  padding: 1vw;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  z-index: 1;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.featured-button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 32px;
+  padding: 0 5vw;
+}
+
+#forward:hover,
+#backward:hover {
+  color: #004943;
+  transition: 0.1s linear;
+  cursor: pointer;
+}

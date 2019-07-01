@@ -1,0 +1,9 @@
+.about {
+  width: 100vw;
+}
+
+@media (max-width: 1024px) {
+  .section1-about {
+    margin-top: -12vh;
+  }
+}

@@ -1,26 +1,34 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Home, About, Listings, Contact } from "./Screens";
+import { Route, BrowserRouter as Router } from "react-router-dom";
+import firebase from "firebase/app";
+import "./App.css";
 
 class App extends Component {
+  componentDidMount() {
+    var firebaseConfig = {
+      apiKey: "AIzaSyAApyyCpNNZkoTmoFTyZ6n2Mqt9dcMHx4M",
+      authDomain: "sanchezri.firebaseapp.com",
+      databaseURL: "https://sanchezri.firebaseio.com",
+      projectId: "sanchezri",
+      storageBucket: "sanchezri.appspot.com",
+      messagingSenderId: "382928925541",
+      appId: "1:382928925541:web:b772d0b5b1e8f934"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/listings" component={Listings} />
+          <Route path="/contact" component={Contact} />
+        </div>
+      </Router>
     );
   }
 }

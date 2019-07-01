@@ -1,0 +1,72 @@
+.overview-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  background-color: #0c8379;
+  margin: 0;
+}
+
+.company-overview,
+.history {
+  width: 40vw;
+  color: white;
+  margin: 8vh 0;
+}
+
+.company-overview p:nth-child(1),
+.history p:nth-child(1) {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.company-overview p:nth-child(2),
+.history p:nth-child(2) {
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) and (min-width: 415px) {
+  .company-overview,
+  .history {
+    width: 45vw;
+  }
+
+  .company-overview p:nth-child(2),
+  .history p:nth-child(2) {
+    font-weight: lighter;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .overview-container {
+    flex-flow: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .company-overview,
+  .history {
+    width: 95vw;
+    text-align: center;
+  }
+
+  .company-overview {
+    background-color: #0c8379;
+    width: 100vw;
+  }
+
+  .history {
+    background-color: #f7f7f7;
+    width: 100vw;
+    color: #0c8379;
+    margin-top: -8vh;
+  }
+
+  .history p {
+    padding: 0 2.5vw;
+  }
+  .company-overview p {
+    padding: 0 2.5vw;
+  }
+}

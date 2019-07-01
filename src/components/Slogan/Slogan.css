@@ -1,0 +1,71 @@
+.slogan-container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin-top: 20vh;
+}
+
+.slogan-container > p {
+  font-size: 42px;
+}
+
+.slogan-container > p {
+  font-weight: lighter;
+}
+
+.slogan-container > p:nth-child(1) {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.slogan-container > p:nth-child(2) {
+  font-weight: 300;
+}
+
+.type-cursor {
+  font-size: 42px;
+  font-weight: 300;
+  animation: blinkingText 0.8s infinite;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: #000;
+  }
+  49% {
+    color: transparent;
+  }
+  50% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+@media (max-width: 320px) {
+  .slogan-container {
+    margin-top: 5vh;
+  }
+
+  .slogan-container > p,
+  .slogan-container > span {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 414px) and (min-width: 321px) {
+  .slogan-container {
+    margin-top: 10vh;
+  }
+
+  .slogan-container > p,
+  .slogan-container > span {
+    font-size: 30px;
+  }
+}
