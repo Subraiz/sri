@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "4687b07cba2ed47d4d951c0bf86031dc",
-    "url": "/sri/static/media/BuildingiPad.4687b07c.png"
+    "revision": "dadab1927b6c455a1d3ed50be1183295",
+    "url": "/sri/static/media/Wave@540.dadab192.png"
   },
   {
     "revision": "bc10e965affe4739a96f",
@@ -28,16 +28,16 @@ self.__precacheManifest = [
     "url": "/sri/static/media/Wave@440.cc2db12c.png"
   },
   {
-    "revision": "dc36c60bb99943d22047f0dda29cdbbf",
-    "url": "/sri/static/media/Building.dc36c60b.png"
+    "revision": "4687b07cba2ed47d4d951c0bf86031dc",
+    "url": "/sri/static/media/BuildingiPad.4687b07c.png"
   },
   {
     "revision": "bc10e965affe4739a96f",
     "url": "/sri/static/js/main.98a69583.chunk.js"
   },
   {
-    "revision": "dadab1927b6c455a1d3ed50be1183295",
-    "url": "/sri/static/media/Wave@540.dadab192.png"
+    "revision": "dc36c60bb99943d22047f0dda29cdbbf",
+    "url": "/sri/static/media/Building.dc36c60b.png"
   },
   {
     "revision": "4af635fbb91db304ceb8f6600361a1fc",
