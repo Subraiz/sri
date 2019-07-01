@@ -106,6 +106,10 @@
   .address-container {
     width: 30vw;
   }
+
+  .house-image:hover {
+    width: 100%;
+  }
 }
 
 .view-more {
@@ -149,6 +153,9 @@
   .address-container {
     width: 46vw;
   }
+  .house-image:hover {
+    width: 100%;
+  }
 }
 
 @media (max-width: 414px) {
@@ -176,6 +183,10 @@
   .icon {
     font-size: 14px;
   }
+
+  .house-image:hover {
+    width: 100%;
+  }
 }
 
 @media (max-width: 375px) and (max-height: 667px) {
@@ -200,5 +211,8 @@
   .details p,
   .icon {
     font-size: 13px;
+  }
+  .house-image:hover {
+    width: 100%;
   }
 }
