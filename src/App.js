@@ -21,9 +21,9 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <Router basename={"/subraiz.github.io/sri/"}>
         <div>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/listings" component={Listings} />
           <Route path="/contact" component={Contact} />
