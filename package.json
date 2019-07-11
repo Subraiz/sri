@@ -2,7 +2,7 @@
   "name": "sri",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://subraiz.github.io/sri",
+  "homepage": "",
   "dependencies": {
     "firebase": "^6.2.4",
     "gh-pages": "^2.0.1",

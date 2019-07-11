@@ -7,14 +7,18 @@ input[type="button"]:focus {
   outline: none;
 }
 
+.home {
+  overflow: hidden;
+}
+
 .section1 {
   width: 100%;
-  overflow: hidden;
   height: 100vh;
   overflow: hidden;
   background-image: url("../../assets/images/Section1BGDesktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .section2 {
